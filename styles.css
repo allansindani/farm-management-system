@@ -1,46 +1,87 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 50%;
-    margin: auto;
+/* Container */
+#app-section, #login-section {
+    width: 90%;
+    max-width: 600px;
     background: white;
+    margin: 50px auto;
     padding: 20px;
-    box-shadow: 0px 0px 10px gray;
-    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    background: #2C3E50;
+    color: white;
+    padding: 15px;
     border-radius: 5px;
 }
 
-h1, h2 {
-    color: #333;
+h2 {
+    color: #2C3E50;
+    border-bottom: 2px solid #2C3E50;
+    padding-bottom: 5px;
 }
 
+/* Forms */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
     margin-bottom: 20px;
 }
 
+/* Inputs */
 input, select, button {
-    padding: 8px;
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
     font-size: 16px;
 }
 
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Buttons */
 button {
-    background-color: green;
+    background: #3498db;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
+button:hover {
+    background: #2980b9;
+}
+
+/* Record List */
 .record {
-    background: #ddd;
+    background: #fff;
     padding: 10px;
-    margin-top: 5px;
+    margin: 10px 0;
     border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logout Button */
+#logout-btn {
+    background: red;
+}
+
+#logout-btn:hover {
+    background: darkred;
 }
